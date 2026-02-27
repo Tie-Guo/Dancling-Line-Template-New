@@ -14,7 +14,7 @@ runs:
     - name: Make purge_cache.py executable
       shell: sh
       run: chmod +x misc/scripts/purge_cache.py
-      
+
     - name: Purge files before timestamp
       shell: sh
       run: misc/scripts/purge_cache.py ${{ env.CACHE_TIMESTAMP }} "${{ inputs.scons-cache }}"
