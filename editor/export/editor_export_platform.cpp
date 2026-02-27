@@ -994,7 +994,7 @@ String EditorExportPlatform::_export_customize(const String &p_path, LocalVector
 }
 
 String EditorExportPlatform::_get_script_encryption_key(const Ref<EditorExportPreset> &p_preset) const {
-	const String from_env = "6676ccdf03d9e5364281b8c1c6666d0bff97402bbdeffe1ef2882209fdda0b0a";
+	const String from_env = OS::get_singleton()->get_environment(ENV_SCRIPT_ENCRYPTION_KEY);
 	if (!from_env.is_empty()) {
 		return from_env.to_lower();
 	}
