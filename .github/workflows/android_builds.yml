@@ -10,7 +10,7 @@ env:
     module_text_server_fb_enabled=yes
     tests=no
     swappy=yes
-    SCRIPT_AES256_ENCRYPTION_KEY: ${{ secrets.SCRIPT_AES256_ENCRYPTION_KEY }}
+  SCRIPT_AES256_ENCRYPTION_KEY: ${{ secrets.SCRIPT_AES256_ENCRYPTION_KEY }}
 
 jobs:
   build-android:
